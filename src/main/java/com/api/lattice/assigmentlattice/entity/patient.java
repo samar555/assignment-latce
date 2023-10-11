@@ -44,6 +44,8 @@ public class patient {
     @NotBlank(message = "choose any one speciality")
     private String symptoms;
 
+    
+
     // getter and setter
     public int getId() {
         return id;

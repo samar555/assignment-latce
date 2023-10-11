@@ -3,11 +3,13 @@ package com.api.lattice.assigmentlattice.entity;
 import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.Range;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -43,7 +45,9 @@ public class doctor {
     @Column
     @NotBlank(message = "choose any one speciality")
     private String speciality;
+     
 
+ 
 
     //getter and setter
 public int getId() {
